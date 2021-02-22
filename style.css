@@ -9,8 +9,8 @@
   background-color: rgb(121, 80, 65);
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .70)), url("images/coffee-beans.jpg");
   height: 90vh;
-  background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
   background-attachment: fixed;
 }
 
@@ -55,26 +55,19 @@
 .info h1 {
   margin-top: 40px;
   margin-bottom: 20px;
-  color: rgb(35, 35, 35);
-}
-
-.info .display-4 {
-  font-size: 300%;
 }
 
 .info h4 {
   font-size: 130%;
-  color: rgb(75, 75, 75);
 }
 
 .info p {
   font-size: 110%;
   font-weight: 500;
-  color: rgb(75, 75, 75);
+  color: black;
 }
 
 .info p:hover {
-  color: black;
   text-decoration: 1px black underline;
 
 }
@@ -114,12 +107,8 @@ footer p {
 /
 */
 
-.menu-hero {
-  background-color: rgb(231, 231, 231);
-}
-
 .menu-hero, .checkout-hero {
-  border-bottom: 4px solid lightgray;
+  border-bottom: 4px solid #e2d0c3;
 }
 
 .menu-hero h1, .checkout-hero h1 {
@@ -127,9 +116,10 @@ footer p {
   margin-bottom: 30px;
 }
 
-.menu-hero h4, .checkout-hero h4 {
+.menu-hero h4 {
   margin-bottom: 50px;
   font-size: 130%;
+  padding: 0 20px;
 }
 
 /*
@@ -139,18 +129,23 @@ footer p {
 */
 
 .menu {
-  margin: 40px 0;
+  background-color: #efe5de;
+  padding: 40px 15px;
+}
+
+.menu .container {
+  padding: 20px 0px;
 }
 
 .menu .card {
-  background-color: rgb(231, 231, 231);
-  transition: background-color 0.2s;
+  margin-top: 15px;
 }
 
 .menu .card:hover {
   cursor: pointer;
-  background-color: rgb(215, 215, 215);
+  border: 1px solid #888;
 }
+
 
 .menu .card-title {
   font-size: 120%;
@@ -166,10 +161,9 @@ footer p {
 /
 */
 
-
 .shopping-cart {
-	padding: 60px 0;
-  background-color: rgb(231, 231, 231);
+	padding: 60px 15px;
+  background-color: #efe5de;
 }
 
 .shopping-cart .content {
@@ -232,7 +226,7 @@ footer p {
 .shopping-cart .summary .summary-item:not(:last-of-type) {
 	padding-bottom: 10px;
 	padding-top: 10px;
-	border-bottom: 1px solid lightgray;
+	border-bottom: 1px solid #e2d0c3;
 }
 
 .shopping-cart .summary .price {
@@ -260,7 +254,7 @@ footer p {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .hero h1, .menu-hero h1, .checkout-hero h1 {
-    font-size: 600%;
+    font-size: 550%;
   }
   .menu-hero h4 {
     margin-bottom: 60px;
@@ -276,6 +270,9 @@ footer p {
   .shopping-cart .quantity-input {
     margin: auto;
   }
+  .info .display-5 {
+    font-size: 280%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -283,9 +280,6 @@ footer p {
   .googleMap {
     width: 400px;
     height: 300px;
-  }
-  .info .display-4 {
-    font-size: 320%;
   }
   
   .info h4 {
@@ -298,6 +292,7 @@ footer p {
   .responsive-img {
     width: 24.99999%;
   }
+  
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -307,5 +302,8 @@ footer p {
   }
   .menu-hero h4 {
     font-size: 170%;
+  }
+  .info .display-5 {
+    font-size: 300%;
   }
 }
